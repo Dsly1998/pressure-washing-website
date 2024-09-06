@@ -1,0 +1,41 @@
+/* Main.css */
+
+.main {
+    height: 100vh; /* Full viewport height */
+    width: 100vw; /* Full viewport width */
+    overflow: hidden; /* Prevent scrolling if needed */
+    background-color: #000000;
+  }
+  
+  .background-image {
+    height: 70vh;
+    width: 100vw;
+    background-image: url('../../images/logo.png'); /* Use the logo as background */
+    background-size:contain; /* Cover the entire area */
+    background-position: center; /* Center the background */
+    background-repeat: no-repeat; /* Prevent tiling */
+    position: relative; /* Position relative to contain the overlay */
+  }
+  
+  .banner {
+    position: absolute; /* Position over the background */
+    top: 50%; /* Center vertically */
+    left: 50%; /* Center horizontally */
+    transform: translate(-50%, -50%); /* Adjust for perfect centering */
+    background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent black background */
+    color: #fff; /* White text color */
+    padding: 20px 40px; /* Padding around text */
+    border-radius: 8px; /* Rounded corners */
+    text-align: center; /* Center the text */
+    max-width: 90%; /* Max width for smaller screens */
+  }
+  
+  .banner h1 {
+    font-size: 2.5em; /* Large font size for the main heading */
+    margin-bottom: 10px; /* Margin below the heading */
+  }
+  
+  .banner p {
+    font-size: 1.2em; /* Font size for the subheading */
+  }
+  

@@ -1,0 +1,60 @@
+/* Header.css */
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #000000; /* You can change this to any color you like */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3); /* White bottom border with slight opacity */
+  }
+  
+  
+  .header__title {
+    margin: 0;
+    padding: 0 0 0 20px;
+    font-size: 1.8em; /* Adjust font size as needed */
+    text-transform: uppercase; /* Make text uppercase */
+    color: #333; /* Adjust text color as needed */
+  }
+  
+  .header__title--line1 {
+    font-weight: 700; /* Bold for emphasis */
+    color: #a91d18; /* Red color for "RED LINE & BLUE" */
+  }
+  
+  .header__title--line2 {
+    font-weight: 400; /* Regular weight for "PRESSURE WASHING" */
+    color: #024791; /* Blue color for "PRESSURE WASHING" */
+  }
+  
+  .nav {
+    display: flex;
+  }
+  
+  .nav-list {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding-right: 30px;
+    padding-left: 0;
+  }
+  
+  .nav-item {
+    margin-left: 30px;
+    font-size: 20px;
+    font-family: "Oswald", sans-serif;
+  }
+  
+  .nav-item a {
+    text-decoration: none;
+    color: #fff; /* Change this color to match your design */
+    font-weight: 500; /* Adjust font weight as needed */
+    transition: color 0.3s;
+  }
+  
+  .nav-item a:hover {
+    color: #2a3cb3dd; /* Change this to a hover color of your choice */
+  }
+  
