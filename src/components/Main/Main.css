@@ -1,20 +1,21 @@
 /* Main.css */
 
 .main {
-    height: 100vh; /* Full viewport height */
+    height: 620px; /* Full viewport height */
     width: 100vw; /* Full viewport width */
     overflow: hidden; /* Prevent scrolling if needed */
     background-color: #000000;
   }
   
   .background-image {
-    height: 70vh;
+    height: 100vh;
     width: 100vw;
-    background-image: url('../../images/logo.png'); /* Use the logo as background */
-    background-size:contain; /* Cover the entire area */
-    background-position: center; /* Center the background */
+    background-image: url('../../images/background.png'); /* Use the logo as background */
+    background-size:cover; /* Cover the entire area */
+    background-position:center bottom; /* Center the background */
     background-repeat: no-repeat; /* Prevent tiling */
     position: relative; /* Position relative to contain the overlay */
+    bottom: 180px;
   }
   
   .banner {
@@ -22,7 +23,7 @@
     top: 50%; /* Center vertically */
     left: 50%; /* Center horizontally */
     transform: translate(-50%, -50%); /* Adjust for perfect centering */
-    background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent black background */
+    background-color: rgba(0, 0, 0, 0.6); /* Semi-transparent black background */
     color: #fff; /* White text color */
     padding: 20px 40px; /* Padding around text */
     border-radius: 8px; /* Rounded corners */

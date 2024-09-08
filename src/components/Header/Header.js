@@ -1,15 +1,12 @@
 import React from "react";
+import logo from '../../images/logo.png';
 import "./Header.css"; // Import the CSS file for styling
 
 function Header() {
   return (
     <header className="header">
       <div className="logo">
-        <h1 className="header__title">
-          <span className="header__title--line1">RED LINE & BLUE</span>
-          <br />
-          <span className="header__title--line2">PRESSURE WASHING</span>
-        </h1>
+        <img src={logo} />
       </div>
       <nav className="nav">
         <ul className="nav-list">
@@ -35,4 +32,3 @@ function Header() {
 }
 
 export default Header;
-
