@@ -1,5 +1,7 @@
 import React from "react";
 import logo from '../../images/logo.png';
+import mail from '../../images/mail.svg';
+import phone from '../../images/phone.svg';
 import "./Header.css"; // Import the CSS file for styling
 
 function Header() {
@@ -26,9 +28,15 @@ function Header() {
       </nav>
       <div className="header__contact-info">
         <div className="header__contact-column">
-          <p className="header__contact-line-1">Contact us at</p>
-          <p className="header__contact-line-2">phone: (386) 275-2180</p>
-          <p className="header__contact-line-3">email: email@email.com</p>
+          <p className="header__contact-line-1">Schedule Today</p>
+          <p className="header__contact-line-2">
+            <img src={phone} alt="phone" className="header__contact-icon" />
+            (386) 275-2180
+          </p>
+          <p className="header__contact-line-3">
+            <img src={mail} alt="email" className="header__contact-icon" />
+            email@email.com
+          </p>
         </div>
       </div>
     </header>

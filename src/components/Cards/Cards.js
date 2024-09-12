@@ -11,39 +11,39 @@ import gallery33 from '../../images/gallery33.png';
 
 export const cards = [
     {
+        image: gallery32,
+        alt: 'Image 0',
+        caption: 'Red Line & Blue Pressure Washing'
+    },
+    {
         image: gallery11,
         alt: 'Image 1',
-        caption: 'Caption 1'
+        caption: 'Before'
     },
     {
         image: gallery12,
         alt: 'Image 2',
-        caption: 'Caption 2'
+        caption: 'After'
     },
     {
         image: gallery22,
         alt: 'Image 3',
-        caption: 'Caption 3'
+        caption: 'Before'
     },
     {
         image: gallery21,
         alt: 'Image 4',
-        caption: 'Caption 4'
-    },
-    {
-        image: gallery31,
-        alt: 'Image 5',
-        caption: 'Caption 5'
-    },
-    {
-        image: gallery32,
-        alt: 'Image 6',
-        caption: 'Caption 6'
+        caption: 'After'
     },
     {
         image: gallery33,
-        alt: 'Image 7',
-        caption: 'Caption 7'
+        alt: 'Image 5',
+        caption: 'Before'
+    },
+    {
+        image: gallery31,
+        alt: 'Image 6',
+        caption: 'After'
     }
 ];
 

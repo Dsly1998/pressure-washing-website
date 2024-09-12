@@ -42,37 +42,52 @@
 }
 
 .header__nav-item a:hover {
-  color: #2a3cb3dd; /* Change this to a hover color of your choice */
+  color: #00158E; /* Change this to a hover color of your choice */
 }
 
 .header__contact-info{
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: flex-start;
   margin: 0;
   padding: 0;
 }
 
 .header__contact-line-1 {
+  display: flex;
   font-family: "Oswald", sans-serif;
   color: black; 
   font-weight: 600;
   margin: 0;
   padding: 0 0 5px 0;
+  font-size: 24px;
 }
 
 .header__contact-line-2 {
+  display: flex;
+  align-items: center;
   font-family: "Oswald", sans-serif;
-  color: red;
+  color: #CF0000;
   font-weight: 600;
+  font-size: 18px;
   margin: 0;
-  padding: 0 0 5px 0;
 }
 
 .header__contact-line-3 {
+  display: flex;
+  align-items: center;
   font-family: "Oswald", sans-serif;
   font-weight: 600;
-  color: blue;
+  font-size: 18px;
+  color:#00158E;
   margin: 0;
   padding: 0;
+}
+
+.header__contact-icon {
+  font-size: 24px;
+  height: 28px;
+  width: 18px;
+  margin-right: 5px;
 }
