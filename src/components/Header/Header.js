@@ -5,30 +5,35 @@ import "./Header.css"; // Import the CSS file for styling
 function Header() {
   return (
     <header className="header">
-      <div className="logo">
-        <img src={logo} />
+      <div className="header__logo-container">
+        <img className="header__logo-img" src={logo} />
       </div>
-      <nav className="nav">
-        <ul className="nav-list">
-          <li className="nav-item">
+      <nav className="header__nav">
+        <ul className="header__nav-list">
+          <li className="header__nav-item">
             <a href="#home">Home</a>
           </li>
-          <li className="nav-item">
+          <li className="header__nav-item">
             <a href="#about">About</a>
           </li>
-          <li className="nav-item">
+          <li className="header__nav-item">
             <a href="#services">Services</a>
           </li>
-          <li className="nav-item">
+          <li className="header__nav-item">
             <a href="#gallery">Gallery</a>
-          </li>
-          <li className="nav-item">
-            <a href="#contact">Contact Us</a>
           </li>
         </ul>
       </nav>
+      <div className="header__contact-info">
+        <div className="header__contact-column">
+          <p className="header__contact-line-1">Contact us at</p>
+          <p className="header__contact-line-2">phone: (386) 275-2180</p>
+          <p className="header__contact-line-3">email: email@email.com</p>
+        </div>
+      </div>
     </header>
   );
 }
 
 export default Header;
+

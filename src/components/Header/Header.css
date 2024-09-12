@@ -1,47 +1,58 @@
 /* Header.css */
 
 .header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px 40px 10px 40px;
-    background-color: #f8f8f8; /* You can change this to any color you like */
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    border: #000 1px solid;
-  }
-  
-  .logo img {
-    height: 100px; 
-    width: auto;
-    border-radius: 50%;
-  }
-  
-  .nav {
-    display: flex;
-  }
-  
-  .nav-list {
-    display: flex;
-    list-style: none;
-    margin: 0;
-    padding-right: 30px;
-    padding-left: 0;
-  }
-  
-  .nav-item {
-    margin-left: 30px;
-    font-size: 22px;
-    font-family: "Oswald", sans-serif;
-  }
-  
-  .nav-item a {
-    text-decoration: none;
-    color: #000; /* Change this color to match your design */
-    font-weight: 700; /* Adjust font weight as needed */
-    transition: color 0.3s;
-  }
-  
-  .nav-item a:hover {
-    color: #2a3cb3dd; /* Change this to a hover color of your choice */
-  }
-  
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 40px 10px 40px;
+  background-color: #f8f8f8; /* You can change this to any color you like */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  border: #000 1px solid;
+}
+
+.header__logo img {
+  height: 100px; 
+  width: auto;
+  border-radius: 50%;
+}
+
+.header__nav {
+  display: flex;
+}
+
+.header__nav-list {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding-right: 30px;
+  padding-left: 0;
+}
+
+.header__nav-item {
+  margin-left: 30px;
+  font-size: 22px;
+  font-family: "Oswald", sans-serif;
+}
+
+.header__nav-item a {
+  text-decoration: none;
+  color: #000; /* Change this color to match your design */
+  font-weight: 700; /* Adjust font weight as needed */
+  transition: color 0.3s;
+}
+
+.header__nav-item a:hover {
+  color: #2a3cb3dd; /* Change this to a hover color of your choice */
+}
+
+.header__contact-line-1 {
+  color: red;
+}
+
+.header__contact-line-2 {
+  color: white;
+}
+
+.header__contact-line-3 {
+  color: blue;
+}
