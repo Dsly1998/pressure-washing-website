@@ -4,13 +4,13 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 10px 40px 10px 40px;
-  background-color: #f8f8f8; /* You can change this to any color you like */
+  padding: 10px 0px 10px 0px;
+  background-color: #D5D5D5; /* You can change this to any color you like */
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   border: #000 1px solid;
 }
 
-.header__logo img {
+.header__logo-img {
   height: 100px; 
   width: auto;
   border-radius: 50%;
@@ -45,14 +45,34 @@
   color: #2a3cb3dd; /* Change this to a hover color of your choice */
 }
 
+.header__contact-info{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+}
+
 .header__contact-line-1 {
-  color: red;
+  font-family: "Oswald", sans-serif;
+  color: black; 
+  font-weight: 600;
+  margin: 0;
+  padding: 0 0 5px 0;
 }
 
 .header__contact-line-2 {
-  color: white;
+  font-family: "Oswald", sans-serif;
+  color: red;
+  font-weight: 600;
+  margin: 0;
+  padding: 0 0 5px 0;
 }
 
 .header__contact-line-3 {
+  font-family: "Oswald", sans-serif;
+  font-weight: 600;
   color: blue;
+  margin: 0;
+  padding: 0;
 }
