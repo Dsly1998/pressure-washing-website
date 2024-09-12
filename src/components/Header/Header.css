@@ -4,7 +4,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 10px 0px 10px 0px;
+  padding: 10px 40px 10px 40px;
   background-color: #D5D5D5; /* You can change this to any color you like */
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   border: #000 1px solid;

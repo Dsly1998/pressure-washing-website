@@ -2,7 +2,7 @@
 
 .main {
     height: 620px; /* Full viewport height */
-    width: 100vw; /* Full viewport width */
+    width: 100%; /* Full viewport width */
     overflow: hidden; /* Prevent scrolling if needed */
     background-color: #000000;
   }

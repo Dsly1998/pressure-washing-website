@@ -9,13 +9,11 @@ import gallery32 from '../../images/gallery32.png';
 import gallery33 from '../../images/gallery33.png';
 
 const images = [
-    { src: gallery32, caption: 'Red Line & Blue Pressure Washing' },
-    { src: gallery11, caption: 'Before'  },
-    { src: gallery12, caption: 'After' },
-    { src: gallery22, caption: 'Before' },
-    { src: gallery21, caption: 'After' },
-    { src: gallery33, caption: 'Before' },
-    { src: gallery31, caption: 'After' },
+    { src: [gallery32], caption: 'Red Line & Blue Pressure Washing' },
+    { src: [gallery11, gallery12], caption: 'Before  After' },
+    { src: [gallery22, gallery21], caption: 'Before  After' },
+    { src: [gallery33, gallery31], caption: 'Before  After' },
+
 ];
 
 function Gallery() {
@@ -32,17 +30,20 @@ function Gallery() {
     return (
         <div className="gallery-container">
             <div className="gallery-content">
-                <h2 className='gallery__title'>Gallery</h2>
+                <h2>Gallery</h2>
                 <div className="gallery__slideshow">
                     <button className="gallery__arrow gallery__arrow--left" onClick={handlePrev}>
                         &#9664;
                     </button>
                     <div className="gallery__slide">
-                        <img
-                            src={images[currentIndex].src}
-                            alt={`Gallery Image ${currentIndex + 1}`}
-                            className="gallery__image"
-                        />
+                        {images[currentIndex].src.map((image, index) => (
+                            <img
+                                key={index}
+                                src={image}
+                                alt={`Gallery Image ${currentIndex + 1}`}
+                                className="gallery__image"
+                            />
+                        ))}
                         <div className="gallery__caption">{images[currentIndex].caption}</div>
                     </div>
                     <button className="gallery__arrow gallery__arrow--right" onClick={handleNext}>
