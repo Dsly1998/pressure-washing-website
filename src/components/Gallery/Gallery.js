@@ -70,6 +70,7 @@ return (
             <div className="decorative-dots-2"></div>
             <div className="decorative-dots-3"></div>
             <div className="decorative-dots-4"></div>
+            <div className="decorative-dots-5"></div>
         </div>
     </div>
 );

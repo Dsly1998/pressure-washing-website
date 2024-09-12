@@ -16,6 +16,7 @@
     background-repeat: no-repeat; /* Prevent tiling */
     position: relative; /* Position relative to contain the overlay */
     bottom: 180px;
+    z-index: 1;
   }
   
   .banner {
