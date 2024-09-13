@@ -5,6 +5,7 @@ import Services from "../Services/Services";
 import "../../../src/index";
 import './App.css';
 import Gallery from "../Gallery/Gallery";
+import Footer from "../Footer/Footer";
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
   <Services />
   <About /> 
   <Gallery />
+  <Footer /> 
   </div>
   );
 }
