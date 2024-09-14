@@ -3,7 +3,7 @@ import "./Main.css"; // Import the CSS file for styling
 
 function Main() {
   return (
-    <div className="main">
+    <div className="main" id="home">
       <div className="background-image">
         <div className="banner">
           <h1>Your Trusted Firefighter-Owned Pressure Washing Company</h1>

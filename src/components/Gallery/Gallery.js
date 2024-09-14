@@ -37,7 +37,7 @@ function Gallery() {
   };
 
 return (
-    <div className="gallery-container">
+    <div className="gallery-container" id='gallery'>
         <div className="gallery-content">
         <div className="decorative-dots"></div>
             <h2 className='gallery__title'>Gallery</h2>

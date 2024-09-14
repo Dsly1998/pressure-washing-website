@@ -1,8 +1,25 @@
 .footer {
     display: flex;
+    flex-direction: column;
     justify-content: space-between;
-    background-color: #D5D5D5;
+    background-color: #fff;
     padding: 12px 80px 12px 80px;
+    font-family: "Oswald", sans-serif;
+    font-weight: 700   ;
+  }
+
+  .footer__logo-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+  }
+
+  .footer__logo-img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin: 0 0 5px 0;
   }
   
   .footer__text {
@@ -11,27 +28,31 @@
     font-family: oswald, sans-serif;
   }
   
-  .footer__left {
+  .footer__bottom {
     display: flex;
     justify-content: center;
     align-items: center;
+    padding-top: 5px;
   }
   
-  .footer__right {
+  .footer__top {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
+    width: 260px;
+    margin: auto;
   }
   
   .footer__icon {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 24px;
-    height: 24px;
+    width: 18px;
+    height: 18px;
     background-color: transparent;
     border-radius: 4px;
-    margin-left: 20px;
+    margin-left: 10px;
+    margin-right: 5px;
   }
   
   .footer__icon-label {
@@ -44,6 +65,7 @@
     margin-left: 10px;
     border: none;
     text-decoration: none;
+    margin: 0;
   }
   
   .footer__icon-link {
@@ -52,12 +74,14 @@
   
   .footer__icon-wrapper {
     display: flex;
-    justify-content: left;
+    justify-content: center;
     align-items: center;
     flex-direction: row;
+    text-decoration: none;
+    color: #000;
   }
   
-  .footer__icon-wrapper:hover {
+  .footer__facebook-wrapper:hover {
     opacity: 50%;
   }
   

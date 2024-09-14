@@ -1,6 +1,6 @@
 import React from "react";
 import logo from '../../images/logo.png';
-import mail from '../../images/mail.svg';
+import Facebook from '../../images/facebookcircle.svg';
 import phone from '../../images/phone.svg';
 import "./Header.css"; // Import the CSS file for styling
 
@@ -16,10 +16,10 @@ function Header() {
             <a href="#home">Home</a>
           </li>
           <li className="header__nav-item">
-            <a href="#about">About</a>
+            <a href="#services">Services</a>
           </li>
           <li className="header__nav-item">
-            <a href="#services">Services</a>
+            <a href="#about">About</a>
           </li>
           <li className="header__nav-item">
             <a href="#gallery">Gallery</a>
@@ -33,10 +33,10 @@ function Header() {
             <img src={phone} alt="phone" className="header__contact-icon" />
             (386) 275-2180
           </p>
-          <p className="header__contact-line-3">
-            <img src={mail} alt="email" className="header__contact-icon" />
-            email@email.com
-          </p>
+          <a href="https://www.facebook.com/profile.php?id=61565379435527&mibextid=LQQJ4d" target="_blank" className="header__contact-line-3">
+            <img src={Facebook} alt="Facebook" className="header__facebook-icon" />
+            Facebook
+          </a>
         </div>
       </div>
     </header>

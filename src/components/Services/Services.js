@@ -9,13 +9,30 @@ import "./Services.css";
 
 function Services() {
   return (
-    <div className="services-container">
+    <div className="services" id='services'>
       <div className="services-content">
         <div className="services-banner">
           <h2 className="services__title">Services</h2>
-          <p className="services__list">
-            House Wash, Driveways, Pool Enclosures, Vinyl Fences, Decks, Patios, Sidewalks, Landscape Curbing
-          </p>
+          <div className='services__list-container'>
+          <ul className="services__list">
+          <li className="services__list-items">House Wash</li>
+<li className="services__list-items">Driveways</li>
+<li className="services__list-items">Pool Enclosures</li>
+<li className="services__list-items">Vinyl Fences</li>
+<li className="services__list-items">Decks</li>
+<li className="services__list-items">Patios</li>
+<li className="services__list-items">Sidewalks</li>
+<li className="services__list-items">Landscape Curbing</li>
+<li className="services__list-items">House Wash</li>
+<li className="services__list-items">Driveways</li>
+<li className="services__list-items">Pool Enclosures</li>
+<li className="services__list-items">Vinyl Fences</li>
+<li className="services__list-items">Decks</li>
+<li className="services__list-items">Patios</li>
+<li className="services__list-items">Sidewalks</li>
+<li className="services__list-items">Landscape Curbing</li>
+</ul>
+   </div>
         </div>
         <div className="services__container">
             <div className="services__card-container">
@@ -24,7 +41,7 @@ function Services() {
             <div className="services__text">
               <h3 className="services__card-title">House Wash</h3>
               <p className="services__card-description">
-                Our house wash service will leave your home looking brand new. We use a soft wash technique that will not damage your home's exterior.
+              Our house wash service leaves your home looking brand new by removing grime, dirt, and mildew from the exterior.
               </p>
             </div>
           </div>
