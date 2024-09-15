@@ -1,43 +1,83 @@
 /* Main.css */
 
 .main {
-    height: 620px; /* Full viewport height */
-    width: 100%; /* Full viewport width */
-    overflow: hidden; /* Prevent scrolling if needed */
-    background-color: #000000;
+  height: 620px; /* Full viewport height */
+  width: 100%; /* Full viewport width */
+  overflow: hidden; /* Prevent scrolling if needed */
+  background-color: #000000;
+}
+
+.background-image {
+  height: 100vh;
+  width: 100vw;
+  background-image: url('../../images/background.png'); /* Use the logo as background */
+  background-size: cover; /* Cover the entire area */
+  background-position: center bottom; /* Center the background */
+  background-repeat: no-repeat; /* Prevent tiling */
+  position: relative; /* Position relative to contain the overlay */
+  bottom: 180px;
+  z-index: 1;
+}
+
+.banner {
+  position: absolute; /* Position over the background */
+  top: 50%; /* Center vertically */
+  left: 50%; /* Center horizontally */
+  transform: translate(-50%, -50%); /* Adjust for perfect centering */
+  background-color: rgba(0, 0, 0, 0.6); /* Semi-transparent black background */
+  color: #fff; /* White text color */
+  padding: 20px 40px; /* Padding around text */
+  border-radius: 8px; /* Rounded corners */
+  text-align: center; /* Center the text */
+  max-width: 90%; /* Max width for smaller screens */
+}
+
+.banner h1 {
+  font-size: 2.5em; /* Large font size for the main heading */
+  margin-bottom: 10px; /* Margin below the heading */
+}
+
+.banner p {
+  font-size: 1.2em; /* Font size for the subheading */
+}
+
+/* Media Queries for Mobile Interface */
+@media (max-width: 768px) {
+  .main {
+    height: auto; /* Adjust height for smaller screens */
   }
-  
+
   .background-image {
-    height: 100vh;
-    width: 100vw;
-    background-image: url('../../images/background.png'); /* Use the logo as background */
-    background-size:cover; /* Cover the entire area */
-    background-position:center bottom; /* Center the background */
-    background-repeat: no-repeat; /* Prevent tiling */
-    position: relative; /* Position relative to contain the overlay */
-    bottom: 180px;
-    z-index: 1;
+    height: 500px;
+    width: 100%;
+    bottom: 0;
   }
-  
+
   .banner {
-    position: absolute; /* Position over the background */
-    top: 50%; /* Center vertically */
-    left: 50%; /* Center horizontally */
-    transform: translate(-50%, -50%); /* Adjust for perfect centering */
-    background-color: rgba(0, 0, 0, 0.6); /* Semi-transparent black background */
-    color: #fff; /* White text color */
-    padding: 20px 40px; /* Padding around text */
-    border-radius: 8px; /* Rounded corners */
-    text-align: center; /* Center the text */
-    max-width: 90%; /* Max width for smaller screens */
+    padding: 15px 30px; /* Adjust padding for smaller screens */
+    max-width: 100%;
+    width: 300px; /* Full width for smaller screens */
   }
-  
+
   .banner h1 {
-    font-size: 2.5em; /* Large font size for the main heading */
-    margin-bottom: 10px; /* Margin below the heading */
+    font-size: 2em; /* Smaller font size for the main heading */
   }
-  
+
   .banner p {
-    font-size: 1.2em; /* Font size for the subheading */
+    font-size: 1em; /* Smaller font size for the subheading */
   }
-  
+}
+
+@media (max-width: 480px) {
+  .banner {
+    padding: 10px 0px; /* Further adjust padding for smaller screens */
+  }
+
+  .banner h1 {
+    font-size: 1.5em; /* Even smaller font size for the main heading */
+  }
+
+  .banner p {
+    font-size: 0.9em; /* Even smaller font size for the subheading */
+  }
+}
