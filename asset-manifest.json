@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/static/css/main.a332f3dd.css",
+    "main.css": "/static/css/main.e1752379.css",
     "main.js": "/static/js/main.204c18ed.js",
     "static/js/453.f108f1d0.chunk.js": "/static/js/453.f108f1d0.chunk.js",
     "static/media/gallery31.png": "/static/media/gallery31.97d6ee847f2a8a227f31.png",
@@ -17,18 +17,18 @@
     "static/media/pool.jpg": "/static/media/pool.dff7c0f863963ecf560a.jpg",
     "static/media/fence.jpg": "/static/media/fence.7abe282cf5fd0177febd.jpg",
     "static/media/Driveway.jpg": "/static/media/Driveway.c85036739366c5f9985d.jpg",
-    "static/media/background.png": "/static/media/background.e8d7a7e6b611cc08c5d7.png",
     "static/media/headshot.png": "/static/media/headshot.4713709f70fe88fb96e0.png",
+    "static/media/background.png": "/static/media/background.d7c28216e88052a1d097.png",
     "static/media/facebookcircle.svg": "/static/media/facebookcircle.a05203bea05a54cbcb2f26ab5244bbe0.svg",
     "index.html": "/index.html",
     "static/media/phone.svg": "/static/media/phone.22904118b466d50710a6927da97da9cf.svg",
     "static/media/mail.svg": "/static/media/mail.eee1baa73917a6ad8cc5ab655510875a.svg",
-    "main.a332f3dd.css.map": "/static/css/main.a332f3dd.css.map",
+    "main.e1752379.css.map": "/static/css/main.e1752379.css.map",
     "main.204c18ed.js.map": "/static/js/main.204c18ed.js.map",
     "453.f108f1d0.chunk.js.map": "/static/js/453.f108f1d0.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.a332f3dd.css",
+    "static/css/main.e1752379.css",
     "static/js/main.204c18ed.js"
   ]
 }
