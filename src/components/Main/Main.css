@@ -1,21 +1,22 @@
 /* Main.css */
 
 .main {
-  height: 620px; /* Full viewport height */
+  max-height:600px ;
+  height: auto; /* Full viewport height */
   width: 100%; /* Full viewport width */
   overflow: hidden; /* Prevent scrolling if needed */
   background-color: #000000;
 }
 
 .background-image {
-  height: 100vh;
+  height: 760px;
   width: 100vw;
   background-image: url('../../images/background.png'); /* Use the logo as background */
   background-size: cover; /* Cover the entire area */
   background-position: center bottom; /* Center the background */
   background-repeat: no-repeat; /* Prevent tiling */
   position: relative; /* Position relative to contain the overlay */
-  bottom: 180px;
+  bottom: 80px;
   z-index: 1;
 }
 
