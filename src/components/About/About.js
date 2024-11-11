@@ -13,10 +13,10 @@ function About() {
                 <div className="about__info">
                 <h2 className='about__title'>About</h2>
                 <p className="about__paragraph">
-                    Brayden Taber is a firefighter, a devoted family man, and a health and fitness enthusiast who believes in hard work and integrity both on and off duty. With years of experience serving his community, Brayden has developed a reputation for being reliable, precise, and committed—qualities he now brings to his new venture, Red Line & Blue Pressure Washing. His goal is simple: to deliver top-quality pressure washing services that leave homes and businesses looking their best.
+                I’m Brayden Taber, a local firefighter and a devoted family man with a passion for health and fitness. I believe in hard work and integrity, both on and off duty. With years of experience serving my community, I’ve built a reputation for being reliable, precise, and committed—qualities I now bring to my new venture, Red Line & Blue Pressure Washing. My goal is simple: to deliver top-quality pressure washing services that make homes and businesses look their best.
                 </p>
                 <p className="about__paragraph">
-                    When he's not at the fire station or working on a project, Brayden cherishes time with his family and stays active through fitness. His dedication to helping others, whether through emergency response or his pressure washing company, reflects his passion for making a positive impact in his community with every job he takes on.
+                When I’m not at the fire station or working on a project, I cherish time with my family and stay active through fitness. My dedication to helping others—whether through emergency response or my pressure washing company—reflects my passion for making a positive impact in my community with every job I take on.
                 </p>
                 </div>
             </div>
