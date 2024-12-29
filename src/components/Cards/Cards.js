@@ -1,5 +1,4 @@
 // Cards.js
-
 import "./Cards.css";
 import gallery11 from "../../images/gallery11.png";
 import gallery12 from "../../images/gallery12.png";
@@ -14,6 +13,10 @@ import before51 from "../../images/before51.jpg";
 import after51 from "../../images/after51.jpg";
 import before61 from "../../images/before61.jpg";
 import after61 from "../../images/after61.jpg";
+import beforeDriveway from "../../images/beforeDriveway1224.png";
+import afterDriveway from "../../images/afterDriveway1224.png";
+import beforeSidewalk from "../../images/beforeSidewalk1224.png";
+import afterSidewalk from "../../images/afterSidewalk1224.png";
 
 export const cards = [
   {
@@ -52,16 +55,15 @@ export const cards = [
     caption: "After",
   },
   { image: before41, alt: "Image 7", caption: "Before" },
-
   { image: after41, alt: "Image 8", caption: "After" },
-
   { image: before51, alt: "Image 9", caption: "Before" },
-
   { image: after51, alt: "Image 10", caption: "After" },
-
   { image: before61, alt: "Image 11", caption: "Before" },
-
   { image: after61, alt: "Image 12", caption: "After" },
+  { image: beforeDriveway, alt: "Image 13", caption: "Before" },
+  { image: afterDriveway, alt: "Image 14", caption: "After" },
+  { image: beforeSidewalk, alt: "Image 15", caption: "Before" },
+  { image: afterSidewalk, alt: "Image 16", caption: "After" },
 ];
 
 function Cards() {
