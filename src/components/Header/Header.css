@@ -5,13 +5,13 @@
   justify-content: space-between;
   align-items: center;
   padding: 10px 40px 10px 40px;
-  background-color: #D5D5D5; /* You can change this to any color you like */
+  background-color: #d5d5d5; /* You can change this to any color you like */
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   border: #000 1px solid;
 }
 
 .header__logo-img {
-  height: 120px; 
+  height: 120px;
   width: auto;
   border-radius: 50%;
   margin: 0;
@@ -43,10 +43,10 @@
 }
 
 .header__nav-item a:hover {
-  color: #00158E; /* Change this to a hover color of your choice */
+  color: #00158e; /* Change this to a hover color of your choice */
 }
 
-.header__contact-info{
+.header__contact-info {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -58,7 +58,7 @@
 .header__contact-line-1 {
   display: flex;
   font-family: "Oswald", sans-serif;
-  color: black; 
+  color: black;
   font-weight: 700;
   margin: 0;
   padding: 0 0 5px 0;
@@ -69,7 +69,7 @@
   display: flex;
   align-items: center;
   font-family: "Oswald", sans-serif;
-  color: #CF0000;
+  color: #cf0000;
   font-weight: 600;
   font-size: 18px;
   margin: 0;
@@ -81,7 +81,7 @@
   font-family: "Oswald", sans-serif;
   font-weight: 600;
   font-size: 18px;
-  color:#00158E;
+  color: #00158e;
   margin: 0;
   padding: 0;
   background-color: transparent;
@@ -101,7 +101,7 @@
   margin-right: 5px;
 }
 
-.header__facebook-icon{
+.header__facebook-icon {
   font-size: 24px;
   height: 28px;
   width: 20px;
@@ -169,7 +169,7 @@
     font-size: 16px;
     padding: 0 14px 0 14px;
     font-weight: 800;
-    font-family:  "Oswald", sans-serif;
+    font-family: "Oswald", sans-serif;
   }
 
   .header__contact-info {
@@ -196,7 +196,7 @@
   .header__contact-line-1 {
     display: flex;
     font-size: 18px;
-    color: #CF0000;
+    color: #cf0000;
   }
 
   .header__contact-line-2,

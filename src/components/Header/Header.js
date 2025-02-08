@@ -1,7 +1,7 @@
 import React from "react";
-import logo from '../../images/logo.png';
-import Facebook from '../../images/facebookcircle.svg';
-import phone from '../../images/phone.svg';
+import logo from "../../images/logo.png";
+import Facebook from "../../images/facebookcircle.svg";
+import phone from "../../images/phone.svg";
 import "./Header.css"; // Import the CSS file for styling
 
 function Header() {
@@ -33,8 +33,16 @@ function Header() {
             <img src={phone} alt="phone" className="header__contact-icon" />
             (386) 275-2180
           </p>
-          <a href="https://www.facebook.com/profile.php?id=61565379435527&mibextid=LQQJ4d" target="_blank" className="header__contact-line-3">
-            <img src={Facebook} alt="Facebook" className="header__facebook-icon" />
+          <a
+            href="https://www.facebook.com/profile.php?id=61565379435527&mibextid=LQQJ4d"
+            target="_blank"
+            className="header__contact-line-3"
+          >
+            <img
+              src={Facebook}
+              alt="Facebook"
+              className="header__facebook-icon"
+            />
             Facebook
           </a>
         </div>
@@ -44,4 +52,3 @@ function Header() {
 }
 
 export default Header;
-
