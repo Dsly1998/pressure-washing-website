@@ -1,10 +1,14 @@
-import React from "react";
+/* eslint-disable jsx-a11y/alt-text */
+import React, { useState } from "react";
 import logo from "../../images/logo.png";
 import Facebook from "../../images/facebookcircle.svg";
 import phone from "../../images/phone.svg";
+import AppointmentModal from "../AppointmentModal/AppointmentModal";
 import "./Header.css"; // Import the CSS file for styling
 
 function Header() {
+  const [isModalOpen, setIsModalOpen] = useState(false);
+
   return (
     <header className="header">
       <div className="header__logo-container">
@@ -28,7 +32,12 @@ function Header() {
       </nav>
       <div className="header__contact-info">
         <div className="header__contact-column">
-          <p className="header__contact-line-1">Schedule Today</p>
+          <button
+            className="header__schedule-button"
+            onClick={() => setIsModalOpen(true)}
+          >
+            Request Appointment
+          </button>
           <p className="header__contact-line-2">
             <img src={phone} alt="phone" className="header__contact-icon" />
             (386) 275-2180
@@ -37,6 +46,7 @@ function Header() {
             href="https://www.facebook.com/profile.php?id=61565379435527&mibextid=LQQJ4d"
             target="_blank"
             className="header__contact-line-3"
+            rel="noreferrer"
           >
             <img
               src={Facebook}
@@ -47,6 +57,10 @@ function Header() {
           </a>
         </div>
       </div>
+      <AppointmentModal
+        isOpen={isModalOpen}
+        onClose={() => setIsModalOpen(false)}
+      />
     </header>
   );
 }
