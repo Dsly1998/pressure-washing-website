@@ -1,53 +1,64 @@
-import React, { useState } from 'react';
-import './AppointmentModal.css';
+import React, { useState } from "react";
+import "./AppointmentModal.css";
+import emailjs from "@emailjs/browser";
 
 function AppointmentModal({ isOpen, onClose }) {
   const [formData, setFormData] = useState({
-    name: '',
-    email: '',
-    phone: '',
-    preferredDate: '',
-    preferredTime: '',
-    message: ''
+    name: "",
+    email: "",
+    phone: "",
+    preferredDate: "",
+    preferredTime: "",
+    message: "",
   });
 
   const handleSubmit = async (e) => {
     e.preventDefault();
+
     try {
-      console.log('Sending request to:', 'http://localhost:3001/api/schedule-appointment');
-      console.log('Form data:', formData);
-      
-      const response = await fetch('http://localhost:3001/api/schedule-appointment', {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-        },
-        body: JSON.stringify(formData),
+      const response = await fetch(
+        "https://your-deployed-backend.com/api/schedule-appointment",
+        {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify(formData),
+        }
+      );
+
+      await emailjs.send(
+        "YOUR_SERVICE_ID", // from EmailJS dashboard
+        "YOUR_TEMPLATE_ID", // from EmailJS dashboard
+        formData,
+        "YOUR_PUBLIC_KEY" // from EmailJS dashboard
+      );
+
+      alert("Thank you! Your appointment request has been sent.");
+      onClose();
+      setFormData({
+        name: "",
+        email: "",
+        phone: "",
+        preferredDate: "",
+        preferredTime: "",
+        message: "",
       });
-      
-      if (response.ok) {
-        alert('Appointment request sent successfully!');
-        onClose();
-      } else {
-        const errorData = await response.json();
-        console.error('Server response:', errorData);
-        alert(`Failed to send appointment request: ${errorData.error || errorData.message}`);
-      }
     } catch (error) {
-      console.error('Network error:', error);
-      alert('Network error occurred. Please check your connection and try again.');
+      console.error("Error:", error);
+      alert("An error occurred. Please try again.");
     }
   };
 
   const handleChange = (e) => {
     setFormData({
       ...formData,
-      [e.target.name]: e.target.value
+      [e.target.name]: e.target.value,
     });
   };
 
   const handleOverlayClick = (e) => {
-    if (e.target.className === 'modal-overlay') {
+    if (e.target.className === "modal-overlay") {
       onClose();
     }
   };
@@ -57,7 +68,9 @@ function AppointmentModal({ isOpen, onClose }) {
   return (
     <div className="modal-overlay" onClick={handleOverlayClick}>
       <div className="modal">
-        <button className="modal__close-button" onClick={onClose}>&times;</button>
+        <button className="modal__close-button" onClick={onClose}>
+          &times;
+        </button>
         <h2>Schedule an Appointment</h2>
         <form onSubmit={handleSubmit}>
           <div className="form-group">
@@ -125,11 +138,13 @@ function AppointmentModal({ isOpen, onClose }) {
               rows="4"
             />
           </div>
-          <button type="submit" className="submit-button">Submit Request</button>
+          <button type="submit" className="submit-button">
+            Submit Request
+          </button>
         </form>
       </div>
     </div>
   );
 }
 
-export default AppointmentModal; 
+export default AppointmentModal;
