@@ -3,6 +3,7 @@ import React, { useState } from "react";
 import logo from "../../images/logo.png";
 import Facebook from "../../images/facebookcircle.svg";
 import phone from "../../images/phone.svg";
+import Instagram from "../../images/instagram.svg";
 import AppointmentModal from "../AppointmentModal/AppointmentModal";
 import "./Header.css"; // Import the CSS file for styling
 
@@ -11,7 +12,7 @@ function Header() {
 
   return (
     <header className="header">
-      <div className="header__logo-container">
+      <div className="header__logo">
         <img className="header__logo-img" src={logo} />
       </div>
       <nav className="header__nav">
@@ -54,6 +55,19 @@ function Header() {
               className="header__facebook-icon"
             />
             Facebook
+          </a>
+          <a
+            href="https://www.instagram.com/red_line_and_blue_pw/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="header__contact-line-3"
+          >
+            <img
+              src={Instagram}
+              alt="Instagram"
+              className="header__facebook-icon"
+            />
+            Instagram
           </a>
         </div>
       </div>
