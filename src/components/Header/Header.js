@@ -36,7 +36,7 @@ function Header() {
           <a
             href="https://www.facebook.com/profile.php?id=61565379435527&mibextid=LQQJ4d"
             target="_blank"
-            className="header__contact-line-3"
+            className="header__contact-line-3" rel="noreferrer"
           >
             <img
               src={Facebook}
