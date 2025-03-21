@@ -91,7 +91,6 @@
   font-size: 18px;
   margin: 0;
   order: 2;
-  min-width: 200px;
   justify-content: flex-start;
 }
 
@@ -109,7 +108,6 @@
   border: none;
   text-decoration: none;
   order: 1;
-  min-width: 200px;
   justify-content: flex-start;
 }
 
