@@ -10,6 +10,15 @@
   border: #000 1px solid;
 }
 
+.header__contact-title {
+  font-family: "Oswald", sans-serif;
+  font-weight: 700;
+  font-size: 24px;
+  color: #000;
+  margin: 0;
+  padding: 0;
+}
+
 .header__logo-img {
   height: 120px;
   width: auto;
@@ -55,6 +64,13 @@
   padding: 0;
 }
 
+.header__contact-column {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 8px;
+}
+
 .header__contact-line-1 {
   display: flex;
   font-family: "Oswald", sans-serif;
@@ -66,6 +82,7 @@
 }
 
 .header__contact-line-2 {
+  /* Phone number */
   display: flex;
   align-items: center;
   font-family: "Oswald", sans-serif;
@@ -73,9 +90,13 @@
   font-weight: 600;
   font-size: 18px;
   margin: 0;
+  order: 2;
+  min-width: 200px;
+  justify-content: flex-start;
 }
 
 .header__contact-line-3 {
+  /* Facebook link */
   display: flex;
   align-items: center;
   font-family: "Oswald", sans-serif;
@@ -87,6 +108,9 @@
   background-color: transparent;
   border: none;
   text-decoration: none;
+  order: 1;
+  min-width: 200px;
+  justify-content: flex-start;
 }
 
 .header__contact-line-3:hover {
@@ -108,8 +132,55 @@
   margin-right: 5px;
 }
 
+.header__appointment-button {
+  background: linear-gradient(#ce0000, #00158e);
+  color: white;
+  padding: 0.75rem 1.5rem;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: 600;
+  font-family: "Oswald", sans-serif;
+  transition: opacity 0.3s;
+  margin-left: 1rem;
+}
+
+.header__appointment-button:hover {
+  opacity: 0.9;
+}
+
+.header__schedule-button {
+  /* Schedule button */
+  background: linear-gradient(135deg, #ce0000, #00158e);
+  color: white;
+  padding: 0.75rem 1.5rem;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 1.1rem;
+  font-weight: 600;
+  font-family: "Oswald", sans-serif;
+  transition: transform 0.2s, box-shadow 0.2s;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+  order: 3;
+  min-width: 200px;
+  align-self: flex-start;
+}
+
+.header__schedule-button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+.header__schedule-button:active {
+  transform: translateY(0);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+}
+
 /* Media Queries for Mobile Interface */
-@media (max-width: 768px) {
+@media (max-width: 800px) {
   .header {
     flex-direction: column;
     padding: 10px 20px;
@@ -137,16 +208,29 @@
   }
 
   .header__contact-info {
-    align-items: flex-start;
+    align-items: center;
+    width: 100%;
   }
 
-  .header__contact-line-1 {
-    font-size: 20px;
+  .header__contact-column {
+    align-items: center;
+    width: 100%;
+    max-width: 300px; /* Limit width for better appearance */
   }
 
   .header__contact-line-2,
   .header__contact-line-3 {
-    font-size: 16px;
+    justify-content: center;
+    width: 100%;
+  }
+
+  .header__schedule-button {
+    align-self: center;
+    width: 100%;
+  }
+
+  .header__appointment-button {
+    margin: 1rem 0;
   }
 }
 
@@ -188,9 +272,9 @@
   }
 
   .header__contact-column {
-    flex-direction: column;
     align-items: center;
-    justify-content: center;
+    width: 100%;
+    max-width: 280px;
   }
 
   .header__contact-line-1 {
@@ -201,10 +285,12 @@
 
   .header__contact-line-2,
   .header__contact-line-3 {
-    display: flex;
-    align-items: center;
     justify-content: center;
-    font-size: 14px;
-    color: #000;
+    width: 100%;
+  }
+
+  .header__schedule-button {
+    align-self: center;
+    width: 100%;
   }
 }
