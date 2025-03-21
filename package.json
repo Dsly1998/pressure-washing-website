@@ -2,7 +2,7 @@
   "name": "pressure-washing-website",
   "version": "0.1.0",
   "private": true,
-  "homepage": "http://www.redlineandbluepressurewashing.com",
+  "homepage": "https://redlineandbluepressurewashing.com",
   "dependencies": {
     "@emailjs/browser": "^4.4.1",
     "@testing-library/jest-dom": "6.6.3",
@@ -46,6 +46,6 @@
   },
   "devDependencies": {
     "@babel/plugin-proposal-private-property-in-object": "^7.21.11",
-    "gh-pages": "^6.1.1"
+    "gh-pages": "^6.3.0"
   }
 }
