@@ -1,15 +1,12 @@
 /* eslint-disable jsx-a11y/alt-text */
-import React, { useState } from "react";
+import React from "react";
 import logo from "../../images/logo.png";
 import Facebook from "../../images/facebookcircle.svg";
 import phone from "../../images/phone.svg";
 import Instagram from "../../images/instagram.svg";
-import AppointmentModal from "../AppointmentModal/AppointmentModal";
 import "./Header.css"; // Import the CSS file for styling
 
 function Header() {
-  const [isModalOpen, setIsModalOpen] = useState(false);
-
   return (
     <header className="header">
       <div className="header__logo">
@@ -36,12 +33,7 @@ function Header() {
       </nav>
       <div className="header__contact-info">
         <div className="header__contact-column">
-          <button
-            className="header__schedule-button"
-            onClick={() => setIsModalOpen(true)}
-          >
-            Request Appointment
-          </button>
+          <h1 className="header__contact-title">Contact Us</h1>
           <p className="header__contact-line-2">
             <img src={phone} alt="phone" className="header__contact-icon" />
             (386) 275-2180
@@ -74,10 +66,6 @@ function Header() {
           </a>
         </div>
       </div>
-      <AppointmentModal
-        isOpen={isModalOpen}
-        onClose={() => setIsModalOpen(false)}
-      />
     </header>
   );
 }

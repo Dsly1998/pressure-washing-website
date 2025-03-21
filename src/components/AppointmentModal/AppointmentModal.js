@@ -16,16 +16,6 @@ function AppointmentModal({ isOpen, onClose }) {
     e.preventDefault();
 
     try {
-      const response = await fetch(
-        "https://your-deployed-backend.com/api/schedule-appointment",
-        {
-          method: "POST",
-          headers: {
-            "Content-Type": "application/json",
-          },
-          body: JSON.stringify(formData),
-        }
-      );
 
       await emailjs.send(
         "YOUR_SERVICE_ID", // from EmailJS dashboard
