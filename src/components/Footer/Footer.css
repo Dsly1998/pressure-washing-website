@@ -152,9 +152,10 @@
 
   .footer__bottom {
     display: flex;
-    justify-content: start;
+    justify-content: center;
     align-items: center;
     width: 100vw;
+    text-align: center;
   }
 
   .footer__facebook-wrapper {
