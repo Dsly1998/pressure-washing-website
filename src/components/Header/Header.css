@@ -26,6 +26,11 @@
   margin: 0;
 }
 
+.header__link {
+  text-decoration: none;
+  cursor: pointer;
+}
+
 .header__nav {
   display: flex;
 }
@@ -53,6 +58,7 @@
 
 .header__nav-item a:hover {
   color: #00158e; /* Change this to a hover color of your choice */
+  cursor: pointer;
 }
 
 .header__contact-info {
