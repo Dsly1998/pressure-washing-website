@@ -1,0 +1,75 @@
+.thank-you {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 70vh;
+  padding: 2rem;
+  background-color: #f8f9fa;
+  text-align: center;
+}
+
+.thank-you__container {
+  max-width: 800px;
+  background-color: white;
+  border-radius: 8px;
+  padding: 3rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  border-top: 4px solid #00158e;
+}
+
+.thank-you__title {
+  font-family: "Oswald", sans-serif;
+  font-size: 2.5rem;
+  color: #00158e;
+  margin-bottom: 1.5rem;
+}
+
+.thank-you__message {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  color: #555;
+  margin-bottom: 2rem;
+}
+
+.thank-you__home-link {
+  display: inline-block;
+  background-color: #00158e;
+  color: white;
+  text-decoration: none;
+  padding: 0.8rem 1.5rem;
+  border-radius: 4px;
+  font-weight: 600;
+  transition: background-color 0.3s, transform 0.2s;
+  margin-top: 1rem;
+}
+
+.thank-you__home-link:hover {
+  background-color: #00158e;
+  transform: translateY(-2px);
+  opacity: 60%;
+}
+
+.thank-you__home-link:active {
+  transform: translateY(0);
+}
+
+.thank-you__logo {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+}
+
+@media (max-width: 768px) {
+  .thank-you__container {
+    padding: 2rem;
+  }
+
+  .thank-you__title {
+    font-size: 2rem;
+  }
+
+  .thank-you__message {
+    font-size: 1rem;
+  }
+}

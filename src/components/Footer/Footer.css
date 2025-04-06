@@ -79,10 +79,22 @@
   flex-direction: row;
   text-decoration: none;
   color: #000;
+  transition: opacity 0.3s ease, transform 0.2s ease;
 }
 
 .footer__facebook-wrapper:hover {
   opacity: 50%;
+}
+
+/* Add hover effects for phone and email links */
+.footer__icon-wrapper:hover {
+  opacity: 60%;
+  transform: scale(1.05);
+  cursor: pointer;
+}
+
+.footer__icon-wrapper:active {
+  transform: scale(0.98);
 }
 
 /* Media Queries for Mobile Interface */

@@ -92,6 +92,13 @@
   margin: 0;
   order: 2;
   justify-content: flex-start;
+  text-decoration: none;
+}
+
+.header__contact-line-2:hover {
+  text-decoration: underline;
+  opacity: 60%;
+  cursor: pointer;
 }
 
 .header__contact-line-3 {
@@ -130,21 +137,10 @@
   margin-right: 5px;
 }
 
-.header__appointment-button {
-  background: linear-gradient(#ce0000, #00158e);
-  color: white;
-  padding: 0.75rem 1.5rem;
-  border: none;
-  border-radius: 4px;
+.header__schedule-button:hover {
+  opacity: 60%;
   cursor: pointer;
-  font-weight: 600;
-  font-family: "Oswald", sans-serif;
-  transition: opacity 0.3s;
-  margin-left: 1rem;
-}
-
-.header__appointment-button:hover {
-  opacity: 0.9;
+  transform: translateY(3px);
 }
 
 .header__schedule-button {
@@ -178,7 +174,7 @@
 }
 
 /* Media Queries for Mobile Interface */
-@media (max-width: 840px) {
+@media (max-width: 936px) {
   .header {
     flex-direction: column;
     padding: 10px 20px;
@@ -190,17 +186,21 @@
   }
 
   .header__nav {
-    flex-direction: column;
+    display: flex;
+    width: 100%;
     align-items: center;
+    justify-content: space-between;
   }
 
   .header__nav-list {
-    flex-direction: column;
+    flex-direction: row;
     padding-right: 0;
+    justify-content: center;
+    margin: auto;
   }
 
   .header__nav-item {
-    margin-left: 0;
+    margin-left: 20px;
     margin-bottom: 10px;
     font-size: 18px;
   }
@@ -216,7 +216,12 @@
     max-width: 300px; /* Limit width for better appearance */
   }
 
-  .header__contact-line-2,
+  .header__contact-line-2 {
+    display: flex;
+    font-size: 18px;
+    text-decoration: none;
+  }
+
   .header__contact-line-3 {
     justify-content: center;
     width: 100%;
@@ -253,6 +258,7 @@
 
   .header__nav-item {
     padding: 0;
+    margin-left: 0;
   }
 
   .header__nav-item {
@@ -288,7 +294,17 @@
     color: #cf0000;
   }
 
-  .header__contact-line-2,
+  .header__contact-line-2 {
+    display: flex;
+    font-size: 18px;
+    color: #cf0000;
+    text-decoration: none;
+  }
+
+  .header__contact-line-2:hover {
+    text-decoration: underline;
+  }
+
   .header__contact-line-3 {
     justify-content: center;
     width: 100%;
