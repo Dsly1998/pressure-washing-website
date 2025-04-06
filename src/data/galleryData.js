@@ -70,6 +70,20 @@ export const galleryData = [
     type: "single",
   },
   {
+    id: "sidewalk",
+    before: {
+      image: img8370,
+      alt: "Sidewalk Before Cleaning",
+      caption: "Before",
+    },
+    after: {
+      image: img8378,
+      alt: "Sidewalk After Cleaning",
+      caption: "After",
+    },
+    type: "comparison",
+  },
+  {
     id: "driveway",
     before: {
       image: beforeDriveway,
@@ -239,13 +253,6 @@ export const galleryData = [
     type: "single",
   },
   {
-    id: "img8370",
-    image: img8370,
-    alt: "Pressure Washing Service",
-    caption: "Red Line and Blue Pressure Washing",
-    type: "single",
-  },
-  {
     id: "img8372",
     image: img8372,
     alt: "Pressure Washing Service",
@@ -255,13 +262,6 @@ export const galleryData = [
   {
     id: "img8375",
     image: img8375,
-    alt: "Pressure Washing Service",
-    caption: "Red Line and Blue Pressure Washing",
-    type: "single",
-  },
-  {
-    id: "img8378",
-    image: img8378,
     alt: "Pressure Washing Service",
     caption: "Red Line and Blue Pressure Washing",
     type: "single",
