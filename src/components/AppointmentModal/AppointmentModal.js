@@ -45,8 +45,7 @@ function AppointmentModal({ isOpen, onClose }) {
           <input
             type="hidden"
             name="_next"
-            //value="https://redlineandbluepressurewashing.com/thank-you.html"
-            value="http://localhost:3000/thank-you"
+            value="https://redlineandbluepressurewashing.com/thank-you.html"
           />
 
           <div className="form-group">
