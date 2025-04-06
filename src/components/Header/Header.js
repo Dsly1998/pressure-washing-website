@@ -1,11 +1,12 @@
 /* eslint-disable jsx-a11y/alt-text */
 import React, { useState } from "react";
+import { Link } from "react-scroll"; // ✅ Import react-scroll
 import AppointmentModal from "../AppointmentModal/AppointmentModal";
 import logo from "../../images/logo.png";
 import Facebook from "../../images/facebookcircle.svg";
 import phone from "../../images/phone.svg";
 import Instagram from "../../images/instagram.svg";
-import "./Header.css"; // Import the CSS file for styling
+import "./Header.css";
 
 function Header() {
   const [isModalOpen, setIsModalOpen] = useState(false);
@@ -18,19 +19,59 @@ function Header() {
       <nav className="header__nav">
         <ul className="header__nav-list">
           <li className="header__nav-item">
-            <a href="#home">Home</a>
+            <Link
+              to="home"
+              smooth={true}
+              duration={500}
+              offset={-80}
+              className="header__nav-link"
+            >
+              Home
+            </Link>
           </li>
           <li className="header__nav-item">
-            <a href="#services">Services</a>
+            <Link
+              to="services"
+              smooth={true}
+              duration={500}
+              offset={-80}
+              className="header__nav-link"
+            >
+              Services
+            </Link>
           </li>
           <li className="header__nav-item">
-            <a href="#about">About</a>
+            <Link
+              to="about"
+              smooth={true}
+              duration={500}
+              offset={-80}
+              className="header__nav-link"
+            >
+              About
+            </Link>
           </li>
           <li className="header__nav-item">
-            <a href="#gallery">Gallery</a>
+            <Link
+              to="reviews"
+              smooth={true}
+              duration={500}
+              offset={-80}
+              className="header__nav-link"
+            >
+              Reviews
+            </Link>
           </li>
           <li className="header__nav-item">
-            <a href="#reviews">Reviews</a>
+            <Link
+              to="gallery"
+              smooth={true}
+              duration={500}
+              offset={-80}
+              className="header__nav-link"
+            >
+              Gallery
+            </Link>
           </li>
         </ul>
       </nav>
