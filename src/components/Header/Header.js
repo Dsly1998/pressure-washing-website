@@ -81,7 +81,7 @@ function Header() {
             className="header__schedule-button"
             onClick={() => setIsModalOpen(true)}
           >
-            Request Appointment
+            Get a Free Quote
           </button>
           <a href="tel:+13862752180" className="header__contact-line-2">
             <img src={phone} alt="phone" className="header__contact-icon" />
