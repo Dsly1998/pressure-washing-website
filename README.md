@@ -1,70 +1,73 @@
-# Getting Started with Create React App
+# Red Line & Blue Pressure Washing Website
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This project has been migrated from Create React App to Vite for better performance, faster builds, and improved security.
 
 ## Available Scripts
 
 In the project directory, you can run:
 
-### `npm start`
+### `npm run dev`
 
-Runs the app in the development mode.\
+Runs the app in development mode with Vite's fast HMR.\
 Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+The page will reload instantly when you make changes.
 
 ### `npm run build`
 
-Builds the app for production to the `build` folder.\
+Builds the app for production to the `dist` folder.\
 It correctly bundles React in production mode and optimizes the build for the best performance.
 
 The build is minified and the filenames include the hashes.\
 Your app is ready to be deployed!
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### `npm run preview`
 
-### `npm run eject`
+Locally preview the production build.\
+Open [http://localhost:4173](http://localhost:4173) to view it in your browser.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+### `npm run deploy`
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+Deploys the built app to GitHub Pages.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+## Migration to Vite
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+This project was successfully migrated from Create React App to Vite, which provides:
 
-## Learn More
+- ⚡ **Faster development** - Instant server start and lightning-fast HMR
+- 🔒 **Better security** - Zero vulnerabilities (previously had multiple CRA vulnerabilities)
+- 📦 **Smaller bundle size** - Better tree-shaking and optimization
+- 🛠️ **Modern tooling** - Native ES modules and modern JavaScript features
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+### Key Changes Made
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+- Replaced `react-scripts` with `vite` and `@vitejs/plugin-react`
+- Updated build output from `build/` to `dist/`
+- Moved `index.html` to project root
+- Updated scripts: `start` → `dev`, added `preview`
+- Configured Vite to handle JSX in `.js` files
+- Removed CRA-specific dependencies and configuration
 
-### Code Splitting
+## Technology Stack
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+- **React 18** - Modern React with concurrent features
+- **Vite** - Next generation frontend tooling
+- **React Router** - Client-side routing
+- **EmailJS** - Contact form handling
+- **React Scroll** - Smooth scrolling navigation
 
-### Analyzing the Bundle Size
+## Development
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+1. Clone the repository
+2. Run `npm install` to install dependencies
+3. Run `npm run dev` to start the development server
+4. Open [http://localhost:3000](http://localhost:3000) in your browser
 
-### Making a Progressive Web App
+## Deployment
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+The site is configured for deployment to GitHub Pages:
 
-### Advanced Configuration
+1. Run `npm run build` to create a production build
+2. Run `npm run deploy` to deploy to GitHub Pages
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+The deployment will use the `dist/` folder created by Vite.
